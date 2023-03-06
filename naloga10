@@ -1,0 +1,17 @@
+with open("vaja.csv", "r") as data:
+    data_lines = data.read().splitlines()
+    
+    for vrstica in data_lines:
+        row_data = vrstica.split(",")
+        print(row_data[0] + " is " + row_data[1] + " years old and " + row_data[2])
+    
+    ALI ŠE DRUG NAČIN
+    
+f = open("vaja.csv", "r")
+
+data = f.read()
+data_lines = data.splitlines()
+
+for row in data_lines:
+    data_row = row.split(",")
+    print(data_row[0] + " is " + str(data_row[1]) + " years old and " + data_row[2])
